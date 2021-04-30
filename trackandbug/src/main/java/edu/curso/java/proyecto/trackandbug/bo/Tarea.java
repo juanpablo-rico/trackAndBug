@@ -2,12 +2,17 @@ package edu.curso.java.proyecto.trackandbug.bo;
 
 import java.util.*;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 public class Tarea {
 
-
+	@Id
+	@GeneratedValue
+	private Long IdTarea;
+	
 	@ManyToOne
 	private TipoDeEstado tipoDeEstado;
 	
