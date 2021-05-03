@@ -30,4 +30,14 @@ public class Comentario {
 		this.fecha = fecha;
 	}
 
+	public String getComentario() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getCreadoPor() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
