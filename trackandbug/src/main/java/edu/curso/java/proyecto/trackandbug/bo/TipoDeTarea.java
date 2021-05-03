@@ -5,16 +5,23 @@ import javax.persistence.*;
 public class TipoDeTarea {
 
 	@Id
-	@GeneratedValue
-	private Long Id;
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	private Long idTipoDeTarea;
+	@Column(nullable = false, length = 40)
+	private String nombre;
 
+	
 	public Long getId() {
-		return Id;
+		return idTipoDeTarea;
 	}
-
 	public void setId(Long id) {
-		Id = id;
+		this.idTipoDeTarea = id;
 	}
-
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
 
 }
